@@ -4,14 +4,21 @@ HTML5 Canvas ve saf JavaScript ile geliştirilmiş, harici kütüphane gerektirm
 
 ## ✨ Özellikler
 - **Saf Web Teknolojisi**: Harici hiçbir kütüphane/paket gerekmez (`HTML5 Canvas`, `Vanilla JS`, `CSS3`).
-- **Dinamik Ses Efektleri**: Web Audio API kullanılarak üretilen zıplama, skor ve çarpışma sesleri (harici ses dosyası indirilmesi gerekmez).
-- **Akıcı Animasyonlar**: Zıplama ve inişlerde squish & stretch deformasyonları, toz ve çarpışma parçacık efektleri.
-- **Kademeli Zorluk**: Skor yükseldikçe oyun hızı tatlı bir tempoda artar.
+- **🦘 Çift Zıplama (Double Jump)**: Karakter havadayken ekstra bir kez daha zıplayabilir; özel enerji halkası efekti ve sesi eşlik eder.
+- **🛹 Eğilme & Kayma Mekaniği (Duck & Slide)**: Karakter eğilerek aerodinamik kayma pozisyonu alır, toz bulutları çıkarır ve havadaki engellerin altından güvenle geçer.
+- **🦅 Uçan Havada Asılı Engeller (Siber Drone)**: Zıplayarak aşılamayan, altındaki güvenli koridordan yalnızca eğilerek geçilebilen uçan engeller.
+- **🪙 Altın Toplama & Ödül Sistemi**: Zemin üstünde, havada ve uçan engellerin altında toplanabilen altınlar (`+25 Skor`, `🪙 Altın Sayacı` ve özel çınlama sesi).
+- **🌅 Gece - Gündüz Döngüsü**: Dinamik ve yaşayan atmosfer (Gündüz ☀️ -> Gün Batımı 🌇 -> Yıldızlı Gece ve Ay 🌙 -> Şafak 🌄).
+- **🎵 Zengin Web Audio API Sesleri**: Zıplama, çift zıplama, kayma, altın toplama, skor ve çarpışma sesleri (harici ses dosyası indirilmesi gerekmez).
+- **Akıcı Parçacık Animasyonları**: Zıplama/iniş tozları, çift zıplama halkası, altın ışıltıları, kayma izleri ve çarpışma patlaması.
+- **Kademeli Zorluk**: Skor yükseldikçe oyun hızı dengeli bir tempoda artar.
 - **Yüksek Skor Kaydı**: En yüksek skor tarayıcı hafızasında (`localStorage`) saklanır.
-- **Mobil & Dokunmatik Uyumlu**: Hem klavye hem fare/dokunmatik tıklamaları destekler.
+- **Mobil & Dokunmatik Uyumlu**: Hem klavye hem mobil dokunmatik butonları (Zıpla & Eğil) destekler.
 
 ## 🕹️ Kontroller
-- **Zıplama / Başlatma / Yeniden Başlatma**: `Space` veya `Yukarı Ok (↑)` tuşu (veya ekrana tıklama)
+- **Zıplama / Çift Zıplama**: `Space`, `W` veya `Yukarı Ok (↑)` tuşu (veya ekrandaki Zıpla butonu / tık)
+- **Eğilme / Kayma**: `S` veya `Aşağı Ok (↓)` tuşu (basılı tutun) (veya ekrandaki Eğil butonu)
+- **Hızlı İniş (Fast-fall)**: Havada iken `S` veya `Aşağı Ok (↓)` basıldığında yere hızlı iniş yapar.
 - **Duraklat / Devam Et**: `P` tuşu
 - **Ses Kontrolü**: Sağ üstteki ses butonu
 
